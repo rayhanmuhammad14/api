@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 def tambah(angka1, angka2):
-    return angka1+angka2
+    return int(angka1)+int(angka2)
 
 @app.route('/', methods = ['POST', 'GET'])
 def index():
