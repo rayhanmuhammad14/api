@@ -16,7 +16,7 @@ def index():
     
         return jsonify({'datas': hasil})
     
-    return jsonify({'Anda Belum Memasukkan Data apapun'})
+    return jsonify({'pesan':'Anda Belum Memasukkan Data apapun'})
 
 if __name__ == '__main__':
     app.run('0.0.0.0', debug=True)
